@@ -55,7 +55,7 @@ public class DBAccessor {
 		if(conn==null) {
 			connect();
 		} 	
-		
+
 		try {
 			rs=stmt.executeQuery(sql);
 		} catch (SQLException e) {
@@ -69,6 +69,10 @@ public class DBAccessor {
 		if(conn==null) {
 			connect();
 		}
+		
+		if(sql == "")
+			return false;
+		
 		try {
 			stmt.execute(sql);
 		} catch(Exception e) {

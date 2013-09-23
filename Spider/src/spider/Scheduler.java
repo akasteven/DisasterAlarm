@@ -19,7 +19,7 @@ public class Scheduler {
 	}
 	
 	public static void main(String args[]){
-		new Scheduler(10);
+		new Scheduler(20);
 	}
 }
 
