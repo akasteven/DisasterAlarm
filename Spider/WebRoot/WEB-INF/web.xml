@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>The spider has been sent again, enemies of the heir, beware!</description>
+    <display-name>Spider's alive</display-name>
+    <servlet-name>daemon</servlet-name>
+    <servlet-class>spider.daemon</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>daemon</servlet-name>
+    <url-pattern>/servlet/daemon</url-pattern>
+  </servlet-mapping>
+
+</web-app>
