@@ -64,6 +64,7 @@ public class DBAccessor {
 		return rs;
 	}
 	
+	
 	//insert records database
 	public static boolean insert(String sql) {
 		if(conn==null) {

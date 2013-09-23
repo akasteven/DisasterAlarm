@@ -34,9 +34,7 @@ public class Crawler {
 	public void crawl()
 	{
 
-		try{		
-//			mostrecent = sdf.parse("2013-09-20 20:24:41");
-			
+		try{			
 			Parser parser=new Parser((HttpURLConnection)(new URL(url)).openConnection());
 			
 			//Filter td nodes whose parent node is a table of class "news-table"
@@ -72,7 +70,8 @@ public class Crawler {
 		Date recorddate = new Date();
 
 		try{		
-			 recorddate = sdf.parse(dt);
+			
+			 recorddate = sdf.parse(dt);	
 			 
 		} catch (Exception e) {   
 		    e.printStackTrace();   
@@ -91,7 +90,7 @@ public class Crawler {
 			DBAccessor.connect();
 			for( int i = 0 ; i < count ; i ++ )
 			{
-				String recorddate = nodelist.elementAt( i* 6 + 1 ).toPlainTextString();
+				String recorddate = nodelist.elementAt( i * 6 + 1 ).toPlainTextString();
 
 				if(!isMoreRecent(recorddate))
 					continue;
@@ -114,12 +113,4 @@ public class Crawler {
 			e.toString();
 		}
 	}
-	
-	
-	public static void main(String[] args)
-	{
-		Crawler spider = new Crawler();
-		spider.crawl();
-	}
-	
 }

@@ -17,10 +17,7 @@ public class Scheduler {
 			spider.crawl();
 		}
 	}
-	
-	public static void main(String args[]){
-		new Scheduler(20);
-	}
+
 }
 
 
