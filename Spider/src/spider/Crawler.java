@@ -27,7 +27,7 @@ public class Crawler {
 	//Formatter for converting String into Date 
 	public final static DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss"); 
 	
-	//Store the most recent date of the records proceed
+	//Store the most recent date of the records processed
 	private static Date mostrecent = null;
 	
 	//Parse pages and store records 
