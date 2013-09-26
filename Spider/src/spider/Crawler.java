@@ -30,10 +30,11 @@ public class Crawler {
 	//Store the most recent date of the records processed
 	private static Date mostrecent = null;
 	
+	
 	//Parse pages and store records 
 	public void crawl()
 	{
-
+		
 		try{			
 			Parser parser=new Parser((HttpURLConnection)(new URL(url)).openConnection());
 			
@@ -108,6 +109,7 @@ public class Crawler {
 				DBAccessor.insert(insertstring);
 			}
 			DBAccessor.close();
+			System.out.println("Database updated at: " + new Date());
 			
 		} catch(Exception e){
 			e.toString();

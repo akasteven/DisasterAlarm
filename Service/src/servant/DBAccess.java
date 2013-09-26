@@ -1,7 +1,7 @@
 package servant;
 
 import java.sql.*;
-
+import java.util.Date;
 
 public class DBAccess {
 
@@ -15,6 +15,7 @@ public class DBAccess {
 	public  static Connection conn=null;
 	public  static Statement stmt=null;
 	public  static ResultSet rs=null;
+	private static int queryTimes = 0;
 	
 	
 	//Connect database
@@ -24,8 +25,7 @@ public class DBAccess {
 				Class.forName(driver).newInstance();
 				conn=DriverManager.getConnection(url,username,password);
 				stmt=conn.createStatement();
-				if(!conn.isClosed())
-					System.out.println("Database connected successfully!");				
+			
 			} catch (Exception e) {
 				System.out.println("Shit!");
 				e.printStackTrace();
@@ -55,6 +55,8 @@ public class DBAccess {
 		
 		try {
 			rs=stmt.executeQuery(sql);
+			queryTimes++;
+			System.out.println("Query request #" + queryTimes + " , response sent at " + new Date());
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -77,25 +79,25 @@ public class DBAccess {
 
 	// Test program
 	
-/*	public static void main(String[] args){
-		connect();
-		query("SELECT magnitude,datetime,latitude,longitude,depth,location FROM earthquake ORDER BY datetime DESC LIMIT 3");
-		try {
-		while(rs.next()){
-				System.out.print(rs.getString(1));
-				System.out.print(" "+rs.getString(2));
-				System.out.print(" "+rs.getString(3));
-				System.out.print(" "+rs.getString(4));
-				System.out.print(" "+rs.getString(5));
-				System.out.print(" "+rs.getString(6));
-				System.out.println();
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		close();
-	}*/
-	
+//	public static void main(String[] args){
+//		connect();
+//		query("SELECT magnitude,datetime,latitude,longitude,depth,location FROM earthquake ORDER BY datetime DESC LIMIT 3");
+//		try {
+//		while(rs.next()){
+//				System.out.print(rs.getString(1));
+//				System.out.print(" "+rs.getString(2));
+//				System.out.print(" "+rs.getString(3));
+//				System.out.print(" "+rs.getString(4));
+//				System.out.print(" "+rs.getString(5));
+//				System.out.print(" "+rs.getString(6));
+//				System.out.println();
+//			}
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//		close();
+//	}
+//	
 	
 	
 }

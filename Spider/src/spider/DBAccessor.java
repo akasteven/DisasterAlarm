@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 
 public class DBAccessor {
 
@@ -26,8 +27,7 @@ public class DBAccessor {
 				Class.forName(driver).newInstance();
 				conn=DriverManager.getConnection(url,username,password);
 				stmt=conn.createStatement();
-				if(!conn.isClosed())
-					System.out.println("Database connected successfully!");				
+
 			} catch (Exception e) {
 				System.out.println("Shit!");
 				e.printStackTrace();
@@ -77,7 +77,7 @@ public class DBAccessor {
 		try {
 			stmt.execute(sql);
 		} catch(Exception e) {
-			return false;
+			e.printStackTrace();
 		}
 		return true;
 	}
