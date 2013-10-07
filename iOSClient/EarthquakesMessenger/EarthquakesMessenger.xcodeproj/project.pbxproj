@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B014F10217FB16A4001A613D /* EventsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B014F10117FB16A4001A613D /* EventsTableVC.m */; };
+		B014F10517FB194A001A613D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B014F10417FB194A001A613D /* DBManager.m */; };
+		B014F10717FB1992001A613D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B014F10617FB1992001A613D /* libsqlite3.0.dylib */; };
+		B014F10917FB1999001A613D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B014F10817FB1999001A613D /* MapKit.framework */; };
+		B014F10B17FB19A0001A613D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B014F10A17FB19A0001A613D /* CoreLocation.framework */; };
+		B014F10D17FB19B2001A613D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B014F10C17FB19B2001A613D /* QuartzCore.framework */; };
+		B014F11417FB1B32001A613D /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = B014F11317FB1B32001A613D /* Record.m */; };
+		B014F11717FDC53F001A613D /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B014F11617FDC53F001A613D /* MapVC.m */; };
+		B04279F418028B44009379D7 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B04279F318028B44009379D7 /* EGORefreshTableHeaderView.m */; };
+		B04279FD18028B54009379D7 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279F518028B54009379D7 /* blackArrow.png */; };
+		B04279FE18028B54009379D7 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279F618028B54009379D7 /* blackArrow@2x.png */; };
+		B04279FF18028B54009379D7 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279F718028B54009379D7 /* blueArrow.png */; };
+		B0427A0018028B54009379D7 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279F818028B54009379D7 /* blueArrow@2x.png */; };
+		B0427A0118028B54009379D7 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279F918028B54009379D7 /* grayArrow.png */; };
+		B0427A0218028B54009379D7 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279FA18028B54009379D7 /* grayArrow@2x.png */; };
+		B0427A0318028B54009379D7 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279FB18028B54009379D7 /* whiteArrow.png */; };
+		B0427A0418028B54009379D7 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04279FC18028B54009379D7 /* whiteArrow@2x.png */; };
+		B0427A1018029F77009379D7 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0718029F76009379D7 /* 1@2x.png */; };
+		B0427A1118029F77009379D7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0818029F76009379D7 /* 3.png */; };
+		B0427A1218029F77009379D7 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0918029F76009379D7 /* 3@2x.png */; };
+		B0427A1318029F77009379D7 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0A18029F77009379D7 /* 5.png */; };
+		B0427A1418029F77009379D7 /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0B18029F77009379D7 /* 5@2x.png */; };
+		B0427A1518029F77009379D7 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0C18029F77009379D7 /* 7.png */; };
+		B0427A1618029F77009379D7 /* 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0D18029F77009379D7 /* 7@2x.png */; };
+		B0427A1718029F77009379D7 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0E18029F77009379D7 /* 9.png */; };
+		B0427A1818029F77009379D7 /* 9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A0F18029F77009379D7 /* 9@2x.png */; };
+		B0427A1A18029F8A009379D7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0427A1918029F8A009379D7 /* 1.png */; };
+		B090D54A17FAAE6F009825B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B090D54917FAAE6F009825B1 /* UIKit.framework */; };
+		B090D54C17FAAE6F009825B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B090D54B17FAAE6F009825B1 /* Foundation.framework */; };
+		B090D54E17FAAE6F009825B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B090D54D17FAAE6F009825B1 /* CoreGraphics.framework */; };
+		B090D55417FAAE6F009825B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B090D55217FAAE6F009825B1 /* InfoPlist.strings */; };
+		B090D55617FAAE6F009825B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B090D55517FAAE6F009825B1 /* main.m */; };
+		B090D55A17FAAE70009825B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B090D55917FAAE70009825B1 /* AppDelegate.m */; };
+		B090D55C17FAAE70009825B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B090D55B17FAAE70009825B1 /* Default.png */; };
+		B090D55E17FAAE70009825B1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090D55D17FAAE70009825B1 /* Default@2x.png */; };
+		B090D56017FAAE70009825B1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B090D55F17FAAE70009825B1 /* Default-568h@2x.png */; };
+		B090D56317FAAE70009825B1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B090D56117FAAE70009825B1 /* MainStoryboard.storyboard */; };
+		B0F772351800330400ABB7E6 /* map_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F772341800330400ABB7E6 /* map_marker.png */; };
+		B0F77244180039CD00ABB7E6 /* CalloutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F77238180039CB00ABB7E6 /* CalloutAnnotationView.m */; };
+		B0F77245180039CD00ABB7E6 /* CustomCalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7723B180039CB00ABB7E6 /* CustomCalloutAnnotation.m */; };
+		B0F77246180039CD00ABB7E6 /* CustomLocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7723E180039CB00ABB7E6 /* CustomLocationAnnotation.m */; };
+		B0F77247180039CD00ABB7E6 /* CustomLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F77240180039CC00ABB7E6 /* CustomLocationView.m */; };
+		B0F77248180039CD00ABB7E6 /* map_marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F77241180039CC00ABB7E6 /* map_marker@2x.png */; };
+		B0F77249180039CD00ABB7E6 /* CustomCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F77242180039CC00ABB7E6 /* CustomCalloutView.xib */; };
+		B0F7724A180039CD00ABB7E6 /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F77243180039CD00ABB7E6 /* CustomCalloutView.m */; };
+		B0F772891801BA4F00ABB7E6 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F772881801BA4E00ABB7E6 /* CustomTableCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B014F10017FB16A4001A613D /* EventsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsTableVC.h; sourceTree = "<group>"; };
+		B014F10117FB16A4001A613D /* EventsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsTableVC.m; sourceTree = "<group>"; };
+		B014F10317FB194A001A613D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		B014F10417FB194A001A613D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		B014F10617FB1992001A613D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		B014F10817FB1999001A613D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B014F10A17FB19A0001A613D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B014F10C17FB19B2001A613D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B014F11217FB1B32001A613D /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		B014F11317FB1B32001A613D /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		B014F11517FDC53F001A613D /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		B014F11617FDC53F001A613D /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		B04279F218028B44009379D7 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		B04279F318028B44009379D7 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		B04279F518028B54009379D7 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		B04279F618028B54009379D7 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		B04279F718028B54009379D7 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		B04279F818028B54009379D7 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		B04279F918028B54009379D7 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		B04279FA18028B54009379D7 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		B04279FB18028B54009379D7 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		B04279FC18028B54009379D7 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		B0427A0718029F76009379D7 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		B0427A0818029F76009379D7 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		B0427A0918029F76009379D7 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+		B0427A0A18029F77009379D7 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		B0427A0B18029F77009379D7 /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@2x.png"; sourceTree = "<group>"; };
+		B0427A0C18029F77009379D7 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		B0427A0D18029F77009379D7 /* 7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7@2x.png"; sourceTree = "<group>"; };
+		B0427A0E18029F77009379D7 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		B0427A0F18029F77009379D7 /* 9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9@2x.png"; sourceTree = "<group>"; };
+		B0427A1918029F8A009379D7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B090D54617FAAE6F009825B1 /* EarthquakesMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakesMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B090D54917FAAE6F009825B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B090D54B17FAAE6F009825B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B090D54D17FAAE6F009825B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B090D55117FAAE6F009825B1 /* EarthquakesMessenger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EarthquakesMessenger-Info.plist"; sourceTree = "<group>"; };
+		B090D55317FAAE6F009825B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B090D55517FAAE6F009825B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B090D55717FAAE70009825B1 /* EarthquakesMessenger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EarthquakesMessenger-Prefix.pch"; sourceTree = "<group>"; };
+		B090D55817FAAE70009825B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B090D55917FAAE70009825B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B090D55B17FAAE70009825B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B090D55D17FAAE70009825B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B090D55F17FAAE70009825B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B090D56217FAAE70009825B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B0F772341800330400ABB7E6 /* map_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_marker.png; path = ../CustomAnnotation/CustomCallout/map_marker.png; sourceTree = "<group>"; };
+		B0F77237180039CA00ABB7E6 /* CalloutAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CalloutAnnotationView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B0F77238180039CB00ABB7E6 /* CalloutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CalloutAnnotationView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B0F77239180039CB00ABB7E6 /* CustomCalloutProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CustomCalloutProtocols.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B0F7723A180039CB00ABB7E6 /* CustomCalloutAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CustomCalloutAnnotation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B0F7723B180039CB00ABB7E6 /* CustomCalloutAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CustomCalloutAnnotation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B0F7723C180039CB00ABB7E6 /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CustomCalloutView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B0F7723D180039CB00ABB7E6 /* CustomLocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CustomLocationAnnotation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B0F7723E180039CB00ABB7E6 /* CustomLocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CustomLocationAnnotation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B0F7723F180039CC00ABB7E6 /* CustomLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLocationView.h; sourceTree = "<group>"; };
+		B0F77240180039CC00ABB7E6 /* CustomLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLocationView.m; sourceTree = "<group>"; };
+		B0F77241180039CC00ABB7E6 /* map_marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_marker@2x.png"; sourceTree = "<group>"; };
+		B0F77242180039CC00ABB7E6 /* CustomCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCalloutView.xib; sourceTree = "<group>"; };
+		B0F77243180039CD00ABB7E6 /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CustomCalloutView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B0F772871801BA4E00ABB7E6 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		B0F772881801BA4E00ABB7E6 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B090D54317FAAE6F009825B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B014F10D17FB19B2001A613D /* QuartzCore.framework in Frameworks */,
+				B014F10B17FB19A0001A613D /* CoreLocation.framework in Frameworks */,
+				B014F10917FB1999001A613D /* MapKit.framework in Frameworks */,
+				B014F10717FB1992001A613D /* libsqlite3.0.dylib in Frameworks */,
+				B090D54A17FAAE6F009825B1 /* UIKit.framework in Frameworks */,
+				B090D54C17FAAE6F009825B1 /* Foundation.framework in Frameworks */,
+				B090D54E17FAAE6F009825B1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B014F0FF17FB15DF001A613D /* RecentEvents */ = {
+			isa = PBXGroup;
+			children = (
+				B0F77236180038FA00ABB7E6 /* CustomAnnotation */,
+				B014F11517FDC53F001A613D /* MapVC.h */,
+				B014F11617FDC53F001A613D /* MapVC.m */,
+				B0F772871801BA4E00ABB7E6 /* CustomTableCell.h */,
+				B0F772881801BA4E00ABB7E6 /* CustomTableCell.m */,
+				B014F10017FB16A4001A613D /* EventsTableVC.h */,
+				B014F10117FB16A4001A613D /* EventsTableVC.m */,
+			);
+			name = RecentEvents;
+			sourceTree = "<group>";
+		};
+		B014F10E17FB19CC001A613D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				B014F10317FB194A001A613D /* DBManager.h */,
+				B014F10417FB194A001A613D /* DBManager.m */,
+				B014F11217FB1B32001A613D /* Record.h */,
+				B014F11317FB1B32001A613D /* Record.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		B0427A0518028B7D009379D7 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B04279F518028B54009379D7 /* blackArrow.png */,
+				B04279F618028B54009379D7 /* blackArrow@2x.png */,
+				B04279F718028B54009379D7 /* blueArrow.png */,
+				B04279F818028B54009379D7 /* blueArrow@2x.png */,
+				B04279F918028B54009379D7 /* grayArrow.png */,
+				B04279FA18028B54009379D7 /* grayArrow@2x.png */,
+				B04279FB18028B54009379D7 /* whiteArrow.png */,
+				B04279FC18028B54009379D7 /* whiteArrow@2x.png */,
+				B04279F218028B44009379D7 /* EGORefreshTableHeaderView.h */,
+				B04279F318028B44009379D7 /* EGORefreshTableHeaderView.m */,
+			);
+			name = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		B0427A0618028BA3009379D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0427A1918029F8A009379D7 /* 1.png */,
+				B0427A0718029F76009379D7 /* 1@2x.png */,
+				B0427A0818029F76009379D7 /* 3.png */,
+				B0427A0918029F76009379D7 /* 3@2x.png */,
+				B0427A0A18029F77009379D7 /* 5.png */,
+				B0427A0B18029F77009379D7 /* 5@2x.png */,
+				B0427A0C18029F77009379D7 /* 7.png */,
+				B0427A0D18029F77009379D7 /* 7@2x.png */,
+				B0427A0E18029F77009379D7 /* 9.png */,
+				B0427A0F18029F77009379D7 /* 9@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B090D53D17FAAE6F009825B1 = {
+			isa = PBXGroup;
+			children = (
+				B090D56117FAAE70009825B1 /* MainStoryboard.storyboard */,
+				B090D54F17FAAE6F009825B1 /* Delegate */,
+				B014F10E17FB19CC001A613D /* Database */,
+				B014F0FF17FB15DF001A613D /* RecentEvents */,
+				B0427A0518028B7D009379D7 /* EGOTableViewPullRefresh */,
+				B090D54817FAAE6F009825B1 /* Frameworks */,
+				B0427A0618028BA3009379D7 /* Resources */,
+				B090D54717FAAE6F009825B1 /* Products */,
+				B090D55017FAAE6F009825B1 /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B090D54717FAAE6F009825B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B090D54617FAAE6F009825B1 /* EarthquakesMessenger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B090D54817FAAE6F009825B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B014F10C17FB19B2001A613D /* QuartzCore.framework */,
+				B014F10A17FB19A0001A613D /* CoreLocation.framework */,
+				B014F10817FB1999001A613D /* MapKit.framework */,
+				B014F10617FB1992001A613D /* libsqlite3.0.dylib */,
+				B090D54917FAAE6F009825B1 /* UIKit.framework */,
+				B090D54B17FAAE6F009825B1 /* Foundation.framework */,
+				B090D54D17FAAE6F009825B1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B090D54F17FAAE6F009825B1 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B090D55817FAAE70009825B1 /* AppDelegate.h */,
+				B090D55917FAAE70009825B1 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			path = EarthquakesMessenger;
+			sourceTree = "<group>";
+		};
+		B090D55017FAAE6F009825B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B090D55117FAAE6F009825B1 /* EarthquakesMessenger-Info.plist */,
+				B090D55217FAAE6F009825B1 /* InfoPlist.strings */,
+				B090D55517FAAE6F009825B1 /* main.m */,
+				B090D55717FAAE70009825B1 /* EarthquakesMessenger-Prefix.pch */,
+				B090D55B17FAAE70009825B1 /* Default.png */,
+				B090D55D17FAAE70009825B1 /* Default@2x.png */,
+				B090D55F17FAAE70009825B1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = EarthquakesMessenger;
+			sourceTree = "<group>";
+		};
+		B0F77236180038FA00ABB7E6 /* CustomAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				B0F77239180039CB00ABB7E6 /* CustomCalloutProtocols.h */,
+				B0F77237180039CA00ABB7E6 /* CalloutAnnotationView.h */,
+				B0F77238180039CB00ABB7E6 /* CalloutAnnotationView.m */,
+				B0F7723A180039CB00ABB7E6 /* CustomCalloutAnnotation.h */,
+				B0F7723B180039CB00ABB7E6 /* CustomCalloutAnnotation.m */,
+				B0F7723C180039CB00ABB7E6 /* CustomCalloutView.h */,
+				B0F77243180039CD00ABB7E6 /* CustomCalloutView.m */,
+				B0F77242180039CC00ABB7E6 /* CustomCalloutView.xib */,
+				B0F7723D180039CB00ABB7E6 /* CustomLocationAnnotation.h */,
+				B0F7723E180039CB00ABB7E6 /* CustomLocationAnnotation.m */,
+				B0F7723F180039CC00ABB7E6 /* CustomLocationView.h */,
+				B0F77240180039CC00ABB7E6 /* CustomLocationView.m */,
+				B0F77241180039CC00ABB7E6 /* map_marker@2x.png */,
+				B0F772341800330400ABB7E6 /* map_marker.png */,
+			);
+			name = CustomAnnotation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B090D54517FAAE6F009825B1 /* EarthquakesMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B090D57417FAAE70009825B1 /* Build configuration list for PBXNativeTarget "EarthquakesMessenger" */;
+			buildPhases = (
+				B090D54217FAAE6F009825B1 /* Sources */,
+				B090D54317FAAE6F009825B1 /* Frameworks */,
+				B090D54417FAAE6F009825B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarthquakesMessenger;
+			productName = EarthquakesMessenger;
+			productReference = B090D54617FAAE6F009825B1 /* EarthquakesMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B090D53E17FAAE6F009825B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Gooding View";
+			};
+			buildConfigurationList = B090D54117FAAE6F009825B1 /* Build configuration list for PBXProject "EarthquakesMessenger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B090D53D17FAAE6F009825B1;
+			productRefGroup = B090D54717FAAE6F009825B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B090D54517FAAE6F009825B1 /* EarthquakesMessenger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B090D54417FAAE6F009825B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B090D55417FAAE6F009825B1 /* InfoPlist.strings in Resources */,
+				B090D55C17FAAE70009825B1 /* Default.png in Resources */,
+				B090D55E17FAAE70009825B1 /* Default@2x.png in Resources */,
+				B090D56017FAAE70009825B1 /* Default-568h@2x.png in Resources */,
+				B090D56317FAAE70009825B1 /* MainStoryboard.storyboard in Resources */,
+				B0F772351800330400ABB7E6 /* map_marker.png in Resources */,
+				B0F77248180039CD00ABB7E6 /* map_marker@2x.png in Resources */,
+				B0F77249180039CD00ABB7E6 /* CustomCalloutView.xib in Resources */,
+				B04279FD18028B54009379D7 /* blackArrow.png in Resources */,
+				B04279FE18028B54009379D7 /* blackArrow@2x.png in Resources */,
+				B04279FF18028B54009379D7 /* blueArrow.png in Resources */,
+				B0427A0018028B54009379D7 /* blueArrow@2x.png in Resources */,
+				B0427A0118028B54009379D7 /* grayArrow.png in Resources */,
+				B0427A0218028B54009379D7 /* grayArrow@2x.png in Resources */,
+				B0427A0318028B54009379D7 /* whiteArrow.png in Resources */,
+				B0427A0418028B54009379D7 /* whiteArrow@2x.png in Resources */,
+				B0427A1018029F77009379D7 /* 1@2x.png in Resources */,
+				B0427A1118029F77009379D7 /* 3.png in Resources */,
+				B0427A1218029F77009379D7 /* 3@2x.png in Resources */,
+				B0427A1318029F77009379D7 /* 5.png in Resources */,
+				B0427A1418029F77009379D7 /* 5@2x.png in Resources */,
+				B0427A1518029F77009379D7 /* 7.png in Resources */,
+				B0427A1618029F77009379D7 /* 7@2x.png in Resources */,
+				B0427A1718029F77009379D7 /* 9.png in Resources */,
+				B0427A1818029F77009379D7 /* 9@2x.png in Resources */,
+				B0427A1A18029F8A009379D7 /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B090D54217FAAE6F009825B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B090D55617FAAE6F009825B1 /* main.m in Sources */,
+				B090D55A17FAAE70009825B1 /* AppDelegate.m in Sources */,
+				B014F10217FB16A4001A613D /* EventsTableVC.m in Sources */,
+				B014F10517FB194A001A613D /* DBManager.m in Sources */,
+				B014F11417FB1B32001A613D /* Record.m in Sources */,
+				B014F11717FDC53F001A613D /* MapVC.m in Sources */,
+				B0F77244180039CD00ABB7E6 /* CalloutAnnotationView.m in Sources */,
+				B0F77245180039CD00ABB7E6 /* CustomCalloutAnnotation.m in Sources */,
+				B0F77246180039CD00ABB7E6 /* CustomLocationAnnotation.m in Sources */,
+				B0F77247180039CD00ABB7E6 /* CustomLocationView.m in Sources */,
+				B0F7724A180039CD00ABB7E6 /* CustomCalloutView.m in Sources */,
+				B0F772891801BA4F00ABB7E6 /* CustomTableCell.m in Sources */,
+				B04279F418028B44009379D7 /* EGORefreshTableHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B090D55217FAAE6F009825B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B090D55317FAAE6F009825B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B090D56117FAAE70009825B1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B090D56217FAAE70009825B1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			path = EarthquakesMessenger;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B090D57217FAAE70009825B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B090D57317FAAE70009825B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B090D57517FAAE70009825B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EarthquakesMessenger/EarthquakesMessenger-Prefix.pch";
+				INFOPLIST_FILE = "EarthquakesMessenger/EarthquakesMessenger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B090D57617FAAE70009825B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EarthquakesMessenger/EarthquakesMessenger-Prefix.pch";
+				INFOPLIST_FILE = "EarthquakesMessenger/EarthquakesMessenger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B090D54117FAAE6F009825B1 /* Build configuration list for PBXProject "EarthquakesMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B090D57217FAAE70009825B1 /* Debug */,
+				B090D57317FAAE70009825B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B090D57417FAAE70009825B1 /* Build configuration list for PBXNativeTarget "EarthquakesMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B090D57517FAAE70009825B1 /* Debug */,
+				B090D57617FAAE70009825B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B090D53E17FAAE6F009825B1 /* Project object */;
+}
